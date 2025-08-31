@@ -1,7 +1,7 @@
 .catalog {
-  padding: 50px 40px;
+  padding: $catalogPaddingV $catalogPaddingH  ;
   display: grid;
-  grid-template-columns: repeat(4, 200px);
+  grid-template-columns: repeat(4, $cardWidth);
   justify-content: center;
-  gap: 48px 46px;
+  gap: $gapRow $gapCol;
 }

@@ -8,7 +8,7 @@ html {
   color: $color;
   display: flex;
   box-sizing: border-box;
-  width: 200px;
+  width: $cardWidth;
   flex-direction: column;
   padding: 32px 16px 16px;
   background-color: white;
@@ -35,7 +35,7 @@ html {
   }
 
   &__button {
-    transition: $tansType,$transTime;
+    transition: background-color $transTime $transType, color $transTime $transType;
     display: flex;
     cursor: pointer;
     font-size: 14px;
@@ -57,9 +57,10 @@ html {
 }
 
 .card:hover{
+  transform: scale(1.2);
+
   &__title {
     color: $cardTitleColor;
-    transform: scale(1.2);
     transition: transform $transTime;
     transition: $tansType $transTime;
   }

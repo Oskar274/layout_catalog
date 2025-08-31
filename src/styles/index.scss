@@ -1,9 +1,11 @@
-@import './values';
-@import './card';
-@import './stars';
 @import './reset';
-@import './price';
+@import './values';
+@import './media';
 @import './main';
+@import './card';
+@import './header';
+@import './stars';
+@import './price';
 
 html {
   font-family: Roboto, sans-serif;
