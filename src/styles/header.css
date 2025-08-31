@@ -30,7 +30,7 @@ body {
   margin: 0 auto;
 }
 
-.navigation {
+.nav {
   display: flex;
 }
 
@@ -67,7 +67,7 @@ body {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: black;
+  color: #060b35;
   font-weight: 500;
   font-size: 12px;
   text-transform: uppercase;
@@ -81,4 +81,5 @@ body {
 
 .nav__link:hover {
   color: var(--blue);
+  transition: color 300ms
 }

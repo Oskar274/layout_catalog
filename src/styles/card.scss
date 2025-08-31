@@ -1,8 +1,10 @@
+
 html {
   font-family: Roboto, sans-serif;
 }
 
 .card {
+  transition: $tansType,$transTime;
   color: $color;
   display: flex;
   box-sizing: border-box;
@@ -18,6 +20,7 @@ html {
     margin-bottom: 40px;
   }
   &__title {
+    transition: $tansType,$transTime;
     font-size: 12px;
     font-weight: 500;
     line-height: 18px;
@@ -32,6 +35,7 @@ html {
   }
 
   &__button {
+    transition: $tansType,$transTime;
     display: flex;
     cursor: pointer;
     font-size: 14px;
@@ -50,4 +54,18 @@ html {
     background-color: white;
     color: $buttonColor;
   }
+}
+
+.card:hover{
+  &__title {
+    color: $cardTitleColor;
+    transform: scale(1.2);
+    transition: transform $transTime;
+    transition: $tansType $transTime;
+  }
+
+  &__button {
+    transition: background-color $transTime, $transType $transTime
+  }
+
 }

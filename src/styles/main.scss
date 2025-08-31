@@ -1,7 +1,7 @@
-.main_container {
+.catalog {
+  padding: 50px 40px;
   display: grid;
   grid-template-columns: repeat(4, 200px);
   justify-content: center;
-  gap: 48px;
-
+  gap: 48px 46px;
 }
